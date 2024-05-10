@@ -5,11 +5,8 @@ from django.template import context
 
 def buypage(request):
     context = {
-        'title': 'Home',
-        'content': 'АЛФВДЫОЖФЫО',
-        'list': ['first', 'second'],
-        'dict': {'first': 1},
-        'bool': True
+        'title': 'Украшения Мари',
+        'content': "Магазин Украшений"
     }
 
 
@@ -17,4 +14,11 @@ def buypage(request):
 
 
 def about(request):
-    return HttpResponse('About page')
+    context = {
+        'title': 'О нас',
+        'content': "О нас",
+        'textonpage': "Жопа слона зуба орла череп коня летучий голандец бобра",
+
+    }
+
+    return render(request, 'main/about.html', context)
