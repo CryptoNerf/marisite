@@ -1,13 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-
+from goods.models import Categories
 
 
 def buypage(request):
+    
     context = {
         'title': 'Украшения Мари',
-        'content': "Магазин Украшений"
+        'content': "Магазин Украшений",
     }
 
 
