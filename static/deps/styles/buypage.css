@@ -6,11 +6,25 @@ body {
     min-height: 100vh;
 }
 
+.current-category {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.other-category {
+    text-decoration: underline;
+}
+
+/* Остальные стили */
+
+
+
 /* Стили для шапки */
 .logo {
     display: flex;
+    /* justify-content: center; */
+    /* margin-top: 2vh; */
     margin-left: 12em;
-
 }
 
 .logomari {
@@ -37,7 +51,6 @@ body {
 .custom2 {
     text-decoration: none;
 }
-
 
 .navigator a {
     color: black;
@@ -87,8 +100,8 @@ body {
     background-color: rgb(229, 229, 229);
     /* margin-left: 80%; */
     font-size: 1em;
-
 }
+
 .switchingnumbers {
     display: flex;
     justify-content: center;
@@ -123,8 +136,5 @@ footer {
         align-items: center;
         margin: 0;
         margin-left: 15px;
-
     }
 }
-
-

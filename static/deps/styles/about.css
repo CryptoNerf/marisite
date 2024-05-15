@@ -52,15 +52,30 @@ body {
     padding: 40px;
 }
 
-.textabout {
+.textabout h1{
     text-align: left;
-    margin-left: 40px;
+    font-size: 40px;
+    margin-left: 2.6em;
+    margin-top: 10%;
+
+}
+.pabout {
+    text-align: left;
+    font-size: 24px;
+    margin-left: 4em;
 }
 
-.textaboutmari p {
-    font-size: 20px;
-    margin-right: 40px;
+.textaboutmari img {
+    width: 510px;
+    border-radius: 20px;
+    margin-left: 8em;
+    margin-bottom: 50px;
+    margin-right: 3em;
+    /* max-height: 600px; */
 }
+
+
+
 
 footer {
     display: flex;
@@ -83,5 +98,36 @@ footer {
         margin: 0;
         margin-left: 15px;
 
+    }
+}
+
+@media (max-width: 991px) {
+    .textabout h1 {
+        margin-left: 20px;
+    }
+
+
+@media (max-width: 991px) {
+    .pabout {
+        margin-left: 20px;
+    }
+
+
+@media (max-width: 460px) {
+    .textabout h1 {
+        margin-left: 20px;
+    }
+
+@media (max-width: 460px) {
+    .pabout {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .textaboutmari img {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
     }
 }

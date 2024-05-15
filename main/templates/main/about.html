@@ -1,11 +1,39 @@
 {% extends "main/base.html" %}
 {%load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static "deps/styles/about.css" %}">
+{% endblock css %}
 
 {% block content %}
-<div class="mt-5 pt-5 ">
-    <h2 class="m-2">{{ content }}</h2>
-    <p class="m-2">{{ textonpage }}</p>
+<section>
 
-</div>
+    <div class="container-fluid mt-4 customabout">
+        <div class="row">
+            <div class="col-lg-7 xxl-7 xl-7 ">
+                <div class="textabout">
+                    <h1>Привет! Меня зовут Мари, и я делаю урашения из полимерной глины &#128578;</h1>
+                    <div class="pabout">
+                        <p>
+                            Я люблю лепить из глины, делать всякие украшения подвесочки, сережечки, бусины, чокеры.
+                        </p>
+                        <p>
+                            Когда я приступаю к созданию нового украшения, я всегда начинаю с мысли о том, как можно
+                            сделать его милым, стараюсь вкладывать в него свои чувства. Я выбираю нежные цвета и простые
+                            формы.
+                            Не могу сказать, что мое творчество какое-то уникальное. Это просто украшения, сделанные с
+                            душой, с любовью к еде, природе, но они не несут особую смысловую нагрузку.
+                        </p>
+                        <p>
+                            Все украшения сделаны из полимерной глины, покрыты специальным лаком для полимерной глины. Доставка по всей России за ваш счет с помощью СДЭКА или Почтой России.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 xxl-5 xl-5  textaboutmari">
+                <img src="{% static "deps/image/photoMari.jpeg" %} " alt="">
+            </div>
+        </div>
+    </div>
+    </div>
 {% endblock content %}
 

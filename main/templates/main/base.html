@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{% static "deps/styles/buypage.css" %}">
     <link rel="icon" href="{% static "deps/image/icon.png" %}">
     <title>{{ title }}</title>
+    {% block css %}
+    {% endblock  %}
 </head>
 
 <body>
@@ -26,7 +28,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link custom1" aria-current="page" href="{% url "catalog:buypage" %}">О нас</a>
+                        <a class="nav-link custom1" aria-current="page" href="{% url "main:about" %}">О нас</a>
                         <a class="nav-link custom2" href="{% url "catalog:buypage" %}">Магазин</a>
                         <a class="nav-link custom3" href="{% url "catalog:buypage" %}">Войти</a>
                         <a class="nav-link custom4" href="{% url "catalog:buypage" %}"><button type="button"

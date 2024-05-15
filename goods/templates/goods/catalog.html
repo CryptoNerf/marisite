@@ -1,5 +1,6 @@
 {% extends "main/base.html" %}
 {% load static %}
+{% load goods_tags %}
 
 {% block section %}
 <section>
@@ -7,29 +8,14 @@
         <div class="row px-2">
             <div class="col-lg-3 col-md-12">
                 <div class="row">
+                    {% tag_categories as categories %}
+                    {% for category in categories %}
                     <div class="col-lg-12 sidebar slidecustom1 my-4">
-                        <a href="buypage.html">
-                            <p>Всё подряд</p>
+                        <a href="{% url "catalog:buypage" category.slug %}" class="{% if category.slug == category_slug %}current-category{% else %}other-category{% endif %}">
+                            {{ category.name }}
                         </a>
                     </div>
-
-                    <div class="col-lg-12 sidebar my-4">
-                        <a href="earrings.html">
-                            <p>Серёжки</p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-12 sidebar my-4">
-                        <a href="ring.html">
-                            <p>Колечки</p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-12 sidebar my-4">
-                        <a href="other.html">
-                            <p>Другое</p>
-                        </a>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
 
